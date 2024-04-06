@@ -6,7 +6,7 @@ ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
 ENV MYSQL_DATABASE=mi_base_de_datos
 
 # Opcional: Añadir un script SQL para inicializar la base de datos
-ADD user.sql /docker-entrypoint-initdb.d
+ADD sgd.sql /docker-entrypoint-initdb.d
 
 
 # # Usar la imagen oficial de Maven con OpenJDK 11 como base
